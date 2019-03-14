@@ -125,7 +125,7 @@ void IntListInsertInOrder (IntList L, int v)
 		for( struct IntListNode *curr = L->first; curr->next != NULL; curr = curr->next){
 			
 			if(curr->next->data > v){
-				
+				L->size++;
 				n->next = curr->next;
 				curr->next = n;
 				break;

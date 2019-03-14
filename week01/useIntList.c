@@ -25,8 +25,8 @@ int main (int argc, char *argv[])
 	if (verbose) printf ("Sorted:\n");
 	showIntList (myOtherList);
 
-	//assert (IntListOK (myOtherList));
-	//assert (IntListIsSorted (myOtherList));
+	assert (IntListOK (myOtherList));
+	assert (IntListIsSorted (myOtherList));
 
 	freeIntList (myList);
 	freeIntList (myOtherList);
